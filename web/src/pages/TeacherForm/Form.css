@@ -1,0 +1,135 @@
+#page-teacher-form{
+    width: 100vw;
+    height: 100vh;
+}
+#page-teacher-form .page-header .header-content{
+    margin-bottom: 6.6rem;
+}
+#page-teacher-form main{
+    width: 100%;
+    background-color: var(--color-box-base);
+    max-width: 74rem;
+    border-radius: 0.8rem;
+    margin:-4.2rem auto 3.2rem;
+    padding-top: 6.4rem;
+}
+#page-teacher-form fieldset{
+    padding:0 2rem;
+    border: none;
+}
+#page-teacher-form fieldset+fieldset{
+    margin-top: 6rem;
+}
+#page-teacher-form fieldset legend{
+    font: 700 2.4rem Archivo Narrow;
+    color:var(--color-text-title);
+    margin-bottom: 2.4rem;
+    width: 100%;
+    /* Botões ao lado */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 1.6rem;
+    border-bottom: 1.5px solid var(--color-line-in-white);
+
+}
+#page-teacher-form fieldset label{
+    color: var(--color-text-complement);
+}
+#page-teacher-form main footer{
+    padding: 4rem 2.4rem;
+    background-color: var(--color-box-footer);
+    border-top: 1px solid var(--color-line-in-white);
+    margin-top: 6.4rem;
+}
+#page-teacher-form main fieldset .input-block + .Textarea-block{
+    margin-top: 2.4rem;
+} 
+#page-teacher-form main fieldset  .Select-block + .input-block {
+    margin-top: 2.4rem;
+} 
+#page-teacher-form main footer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+#page-teacher-form main footer p img{
+    margin-right: 2rem;
+}
+#page-teacher-form main footer button{
+    width: 100%;
+    height: 5.6rem;
+    padding: 1.4rem;
+    border-radius: 0.8rem;
+    border: none;
+    background-color: var(--color-secundary);
+    color: var(--color-button-text);
+    transition: background-color 0.3s ease-in;
+    margin-top: 2.6rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+
+}
+#page-teacher-form main footer button:hover{
+    background-color: var(--color-secundary-dark);
+}
+#page-teacher-form main fieldset legend button{
+    border: none;
+    background-color: var(--color-box-base);
+    color: var(--color-primary-lighter);
+    font: 700 1.6rem Archivo Narrow;
+    outline: none;
+    transition: color 0.2s;
+
+}
+#page-teacher-form main fieldset legend button:hover{
+    color: var(--color-primary-darker);
+}
+@media(min-width:1100px){
+    #page-teacher-form{
+        max-width: 100%;
+    }
+    #page-teacher-form .page-header .header-content{
+        margin-bottom: 0;
+    }
+    #page-teacher-form main fieldset{
+        padding: 0 6.4rem;
+    }
+    #page-teacher-form main footer{
+        padding: 4rem 6.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 0.8rem;
+    }
+    #page-teacher-form main footer button{
+        width: 20rem;
+        height: 5.4rem;
+        margin-top: 0;
+    }
+    #page-teacher-form main footer p{
+        justify-content: space-between;
+    }
+    
+    #page-teacher-form main fieldset .schedule-item{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        column-gap: 1.6rem;
+
+    }
+    #page-teacher-form main fieldset  .schedule-item .input-block{
+        margin-top: 0;
+    }
+    #page-teacher-form main fieldset .schedule-item  .Select-block+ .input-block{
+        margin-left: 4rem;
+    }
+    #page-teacher-form main fieldset .schedule-item .input-block{
+        margin-left: 2rem;
+    }
+}
